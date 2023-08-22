@@ -12,16 +12,22 @@ acumulador = num
 media = 1
 
 while (num != -1 ):
-    num = float(input("Informe outro número: "))
+    num = float(input("Informe um número: "))
 
     if (num != -1):
         acumulador = acumulador + num
         media = media + 1
+
         if (maior < num):
             maior = num
+
         if(menor > num):
             menor = num
 
+if (maior == -1):
+    print("Você inderiu o número -1 na primeira resposta.\n FIM DO PROGRAMA!")
+
 print(f"O maior número é {maior} e o menor número é {menor}")
 print(f"A media entre os números é de {acumulador / media:.1f}")
+print("FIM DO PROGRAMA!")
 
