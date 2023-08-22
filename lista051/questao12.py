@@ -5,3 +5,23 @@ de números deve parar quando o usuário digitar o número -1, e este número -1
 como maior, nem como menor, e nem na contagem da média.
 '''
 
+num = float(input("Informe um número: "))
+maior = num
+menor = num
+acumulador = num
+media = 1
+
+while (num != -1 ):
+    num = float(input("Informe outro número: "))
+
+    if (num != -1):
+        acumulador = acumulador + num
+        media = media + 1
+        if (maior < num):
+            maior = num
+        if(menor > num):
+            menor = num
+
+print(f"O maior número é {maior} e o menor número é {menor}")
+print(f"A media entre os números é de {acumulador / media:.1f}")
+

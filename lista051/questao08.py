@@ -4,14 +4,25 @@ Desenvolver um programa que apresente todos os valores numéricos inteiros ímpa
 mostre-o; não sendo, passe para o próximo passo.
 '''
 
-cont: int = 0
-while (cont < 20):
-    if (cont / 2):
-    cont = cont + 1
-        pass
+'''
+primeiro parte - definir um contador que vai mudando de números até o final
+segunda parte - while, testada ate o final
+terceira parte - precisa somar mais um para o codigo não engasgar
+'''
 
-    else:
+#Isso é a obrigação um da estrutura de repetição
+# declarar variável contador no valor inicial da repetição
+cont = 0
+
+#regra 2, testar a estrutura (while com var contador) no valor fim da repetição
+while (cont <= 20):
+    #bloco que será repetido várias vezes
+    resto = cont % 2
+    if (resto == 1):
         print(cont)
+
+
+    #regra 3 - incrementar a var contador na última linha dentro do bloco
     cont = cont + 1
 
-#Pelo menos eu tentei
+

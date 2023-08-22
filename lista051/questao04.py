@@ -4,7 +4,7 @@ Desenvolver um programa que apresente o valor da soma dos cem primeiros números
 '''
 
 contador = 1
-acumulador = 0    #se fosse pra multiplicar ou dividir seria o acumulador seria 1
+acumulador = 0   #se fosse pra multiplicar ou dividir seria o acumulador seria 1
 
 while (contador <= 100):
     acumulador =  acumulador + contador
